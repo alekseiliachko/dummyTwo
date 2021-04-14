@@ -21,7 +21,7 @@ public class QueueAdapterImpl implements QueueAdapter{
     private final RestTemplate restTemplate;
 
     // imagine value here
-    static String REMOTE_NAME = "http://localhost:8001";
+    static String REMOTE_NAME = "http://localhost:8002";
 
     // imagine value here
     static String REMOTE_PASS = "password";
