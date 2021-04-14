@@ -13,10 +13,13 @@ public class QueueConfig {
     public static final String QUEUE_REGISTER_PATH = "registerRemote/";
     public static final String QUEUE_SUBSCRIPTION_PATH = "topic/";
 
-    private static class QueueTemplateConfig {
-        @Bean
-        public RestTemplate restTemplate() {
-            return new RestTemplate();
-        }
+
+    public static final String THIS_BASE_URL_PATH = "http://localhost:8002/";
+    public static final String REMOTE_PASS = "pass";
+    public static final String REMOTE_KEY = "secretKey";
+
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
     }
 }

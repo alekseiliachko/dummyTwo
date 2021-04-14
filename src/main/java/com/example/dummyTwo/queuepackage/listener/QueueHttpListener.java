@@ -4,12 +4,10 @@ import com.example.dummyTwo.queuepackage.config.QueueConfig;
 import com.example.dummyTwo.queuepackage.dto.Message;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 
-@Controller
 public interface QueueHttpListener {
 
     @PostMapping(QueueConfig.THIS_LISTENER_PATH)
